@@ -1,8 +1,7 @@
-import './App.css';
 import React, { useState } from 'react'
 import axios from 'axios'
 
-function App(props) {
+export default function App() {
   const [usuario, setUsuario] = useState("")
 
   function handlePesquisa() {
@@ -11,14 +10,9 @@ function App(props) {
 
   return (
     <>
-      <h2>{props.title}</h2>
+      <h2>Consulta Repositórios Github</h2>
       <input className="usuario" placeholder="Usuário" value={usuario} onChange={e => setUsuario(e.target.value)} />
       <button type="button" onClick={handlePesquisa}>Pesquisar</button>
     </>
   );
 }
-
-export default App;
-
-// useState retorna um array com dois componentes:
-// [ usuario, setUsuario ]

@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './old_archives/reportWebVitals';
+import App from './home';
 
 ReactDOM.render(
-  <App title="Consulta de reposiotórios no Github" />,
+  <App />,
   document.getElementById("root")
 );
 
