@@ -1,9 +1,16 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-    width: 100%;
-    height: 10vh;
+export const HomeContainer = styled.div`
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+`
+
+export const Contend = styled.div`
+    display: flex;
+    width: 100vw;
     align-items: center;
     justify-content: center;
 `
@@ -35,4 +42,12 @@ export const Button = styled.button`
     background: #000;
     color: #fff;
     border-radius: 0 .25rem .25rem 0;
+`
+
+export const ErrorMsg = styled.span`
+    display: block;
+    font-size: 0.8rem;
+    color: red;
+    font-weight: bold;
+    margin-top: 1rem;
 `
